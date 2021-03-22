@@ -44,7 +44,7 @@ const fetchFarms = async () => {
           name: 'decimals',
         },
       ]
-
+      console.log('-- fetchFarms 1')
       const [
         tokenBalanceLP,
         quoteTokenBlanceLP,
@@ -53,7 +53,7 @@ const fetchFarms = async () => {
         tokenDecimals,
         quoteTokenDecimals,
       ] = await multicall(erc20, calls)
-
+      console.log('-- fetchFarms 2')
       // Ratio in % a LP tokens that are in staking, vs the total number in circulation
       const lpTokenRatio = new BigNumber(lpTokenBalanceMC).div(new BigNumber(lpTotalSupply))
 

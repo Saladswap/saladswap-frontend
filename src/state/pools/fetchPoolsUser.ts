@@ -55,12 +55,15 @@ export const fetchUserBalances = async (account) => {
 }
 
 export const fetchUserStakeBalances = async (account) => {
+  console.log('--------------------------------- account1 : ', account)
+  console.log('--------------------------------- nonMasterPools : ', nonMasterPools)
   const calls = nonMasterPools.map((p) => ({
     address: getAddress(p.contractAddress),
     name: 'userInfo',
     params: [account],
   }))
   const userInfo = await multicall(sousChefABI, calls)
+  console.log('--------------------------------- userInfo : ', userInfo)
   const stakedBalances = nonMasterPools.reduce(
     (acc, pool, index) => ({
       ...acc,

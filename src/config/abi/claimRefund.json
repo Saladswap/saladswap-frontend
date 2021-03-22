@@ -3,7 +3,7 @@
     "inputs": [
       {
         "internalType": "contract IBEP20",
-        "name": "_cakeToken",
+        "name": "_saladToken",
         "type": "address"
       },
       {
@@ -13,7 +13,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_numberCake",
+        "name": "_numberSalad",
         "type": "uint256"
       },
       {
@@ -43,19 +43,6 @@
     ],
     "name": "OwnershipTransferred",
     "type": "event"
-  },
-  {
-    "inputs": [],
-    "name": "cakeToken",
-    "outputs": [
-      {
-        "internalType": "contract IBEP20",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
   },
   {
     "inputs": [
@@ -117,7 +104,7 @@
   },
   {
     "inputs": [],
-    "name": "numberCake",
+    "name": "numberSalad",
     "outputs": [
       {
         "internalType": "uint256",
@@ -146,6 +133,19 @@
     "name": "renounceOwnership",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "saladToken",
+    "outputs": [
+      {
+        "internalType": "contract IBEP20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {

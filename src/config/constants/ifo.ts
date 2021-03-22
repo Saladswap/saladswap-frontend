@@ -37,7 +37,7 @@ const ifos: Ifo[] = [
     saladToBurn: '$500,000',
     projectSiteUrl: 'https://berrydata.co/',
     currency: 'SALAD-BNB LP',
-    currencyAddress: '0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6',
+    currencyAddress: '0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6', // SaladPair
     tokenDecimals: 18,
     tokenSymbol: 'BRY',
     releaseBlockNumber: 4750968,

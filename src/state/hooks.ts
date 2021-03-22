@@ -95,7 +95,7 @@ export const usePriceSaladBusd = (): BigNumber => {
 }
 
 export const usePriceEthBusd = (): BigNumber => {
-  const pid = 14 // ETH-BNB LP
+  const pid = 3 // ETH-BNB LP
   const bnbPriceUSD = usePriceBnbBusd()
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO

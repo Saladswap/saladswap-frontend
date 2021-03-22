@@ -13,6 +13,7 @@ export const useLotteryAllowance = () => {
 
   useEffect(() => {
     const fetchAllowance = async () => {
+      if (!account) return
       const res = await saladContract.methods.allowance(account, getLotteryAddress()).call()
       setAllowance(new BigNumber(res))
     }

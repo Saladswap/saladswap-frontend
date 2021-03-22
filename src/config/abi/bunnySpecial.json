@@ -8,11 +8,11 @@
       },
       {
         "internalType": "contract IBEP20",
-        "name": "_cakeToken",
+        "name": "_saladToken",
         "type": "address"
       },
       {
-        "internalType": "contract ISaladProfile",
+        "internalType": "contract SaladProfile",
         "name": "_saladProfile",
         "type": "address"
       },
@@ -43,7 +43,7 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "costCake",
+        "name": "costSalad",
         "type": "uint256"
       }
     ],
@@ -68,7 +68,7 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "costCake",
+        "name": "costSalad",
         "type": "uint256"
       },
       {
@@ -144,7 +144,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_cakeCost",
+        "name": "_saladCost",
         "type": "uint256"
       }
     ],
@@ -175,7 +175,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "cakeCost",
+        "name": "saladCost",
         "type": "uint256"
       },
       {
@@ -198,32 +198,6 @@
     "outputs": [
       {
         "internalType": "contract BunnyMintingStation",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "bytes32",
-        "name": "c__0xf318aee2",
-        "type": "bytes32"
-      }
-    ],
-    "name": "c_0xf318aee2",
-    "outputs": [],
-    "stateMutability": "pure",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "cakeToken",
-    "outputs": [
-      {
-        "internalType": "contract IBEP20",
         "name": "",
         "type": "address"
       }
@@ -370,10 +344,17 @@
   },
   {
     "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "saladProfile",
     "outputs": [
       {
-        "internalType": "contract ISaladProfile",
+        "internalType": "contract SaladProfile",
         "name": "",
         "type": "address"
       }
@@ -383,9 +364,15 @@
   },
   {
     "inputs": [],
-    "name": "renounceOwnership",
-    "outputs": [],
-    "stateMutability": "nonpayable",
+    "name": "saladToken",
+    "outputs": [
+      {
+        "internalType": "contract IBEP20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -415,7 +402,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_cakeCost",
+        "name": "_saladCost",
         "type": "uint256"
       },
       {
